@@ -1,9 +1,14 @@
-
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import GateTrackerLanding from './Screens/HomeScreen/HomeScreen';
 function App() {
   return (
-    <div>
-      <h1>Hello hello</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<GateTrackerLanding />} />
+      </Routes>
+    </Router>
   )
 }
 
