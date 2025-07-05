@@ -12,15 +12,7 @@ import {
   Circle,
   Minus,
 } from "lucide-react";
-import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  Tooltip,
-  CartesianGrid,
-  ResponsiveContainer,
-} from "recharts";
+
 
 const GateDashboard = () => {
   const [analytics, setAnalytics] = useState({
