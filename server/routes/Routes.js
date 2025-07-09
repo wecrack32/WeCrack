@@ -61,6 +61,9 @@ router.post("/update-syllabus-progress", verifyToken, topicstracker);
 router.get("/get-syllabus-progress", verifyToken, getTopics);
 router.post("/auth/google", googleLoginUser);
 
+router.get('/ping', (req, res) => {
+  res.status(200).json({ status: '🟢 Backend is awake!' });
+});
 
 
 
